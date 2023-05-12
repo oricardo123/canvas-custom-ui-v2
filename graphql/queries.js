@@ -19,6 +19,11 @@ export const GET_CATALOGS = gql`
         }
       }
       catalogSlug
+      specImages {
+        id
+        url
+      }
+      specDimensions
     }
   }
 `;
@@ -48,12 +53,82 @@ export const GET_PRODUCT = gql`
     product(where: { productSlug: $productSlug }) {
       id
       description
+      name
       image {
         id
         url
         fileName
       }
       productSlug
+    }
+  }
+`;
+
+export const GET_INITIAL_PRODUCTS_CONNECTION = gql`
+  query GetProductsConnnection($size: Int!, $catalogSlug: String!) {
+    productsConnection(
+      first: $size
+      where: { catalogs_some: { catalogSlug: $catalogSlug } }
+    ) {
+      pageInfo {
+        endCursor
+        hasNextPage
+        pageSize
+        startCursor
+        hasPreviousPage
+      }
+      edges {
+        cursor
+        node {
+          name
+          productSlug
+          image {
+            id
+            url
+          }
+          catalogs {
+            catalogSlug
+          }
+          id
+        }
+      }
+    }
+  }
+`;
+
+export const GET_PRODUCTS_CONNECTION = gql`
+  query GetProductsConnnection(
+    $cursor: String
+    $size: Int!
+    $catalogSlug: String!
+  ) {
+    productsConnection(
+      after: $cursor
+      first: $size
+      where: { catalogs_some: { catalogSlug: $catalogSlug } }
+    ) {
+      pageInfo {
+        endCursor
+        hasNextPage
+        pageSize
+        startCursor
+        hasPreviousPage
+      }
+      edges {
+        cursor
+        node {
+          name
+          productSlug
+          image {
+            id
+            url
+          }
+          catalogs {
+            catalogSlug
+          }
+          id
+        }
+      }
     }
   }
 `;

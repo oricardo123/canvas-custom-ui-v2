@@ -3,16 +3,14 @@ import Link from "next/link";
 import Image from "next/image";
 import { fetchCatalogs } from "../../lib/fetchCatalogs";
 
-function CatalogList({ catalogs }) {
+function CatalogNav({ catalogs }) {
   return (
     <div className="mt-24">
       <h1>Catalogs</h1>
-      <ul className="grid grid-rows-4">
-        {catalogs.map((catalog) => (
-          <li key={catalog.catalogSlug}>
+      <ul className="">
+        {catalogs?.map((catalog) => (
+          <li>
             <Link href={`/catalog/${catalog.catalogSlug}`}>
-              <img src={catalog.image.url} className="" />
-              {catalog.name}
             </Link>
           </li>
         ))}
@@ -23,13 +21,12 @@ function CatalogList({ catalogs }) {
 
 export async function getStaticProps() {
   const catalogs = await fetchCatalogs();
-
   return {
     props: {
       catalogs,
     },
-    revalidate: 60, // Optional: Set a revalidation time in seconds
+    revalidate: 1,
   };
 }
 
-export default CatalogList;
+export default CatalogNav;

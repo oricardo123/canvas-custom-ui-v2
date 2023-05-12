@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import img from "../../public/images/canvas-logo-brown.jpg";
+import Logo from "../../public/images/canvas-logo-brown.png";
 
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
@@ -18,7 +18,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="bg-white">
+    <div className="bg-white text-FooterColor">
       <header className="absolute inset-x-0 top-0 z-50 w-">
         <nav
           className="flex items-center justify-between p-6 lg:px-8"
@@ -28,14 +28,11 @@ const Navbar = () => {
             <Link href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
               <Image
-                src={img}
+                src={Logo}
                 alt="Picture"
-                width={800}
-                height={800}
-                className="h-8 w-auto"
-                // className="absolute right-[5%] bottom-[48%] w-auto rounded-2xl hidden lg:block"
+                width={100}
+                height={100}
               />
-              {/* <img className="h-8 w-auto" src={img} alt="canvas custom" /> */}
             </Link>
           </div>
           <div className="flex lg:hidden">
@@ -70,8 +67,7 @@ const Navbar = () => {
           <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
               <Link href="/" className="-m-1.5 p-1.5">
-                <span className="sr-only"></span>
-                <img className="h-8 w-auto" src={img} alt="" />
+                <Image src={Logo} width={80} height={80} className="mb-4"/>
               </Link>
               <button
                 type="button"
