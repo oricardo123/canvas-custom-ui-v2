@@ -23,6 +23,8 @@ const PortfolioTopGallery = () => {
           src={img2}
           width={385}
           height={380}
+          height={385}
+          width={379}
           alt="Picture"
           className="absolute right-[5%] bottom-[40%] w-auto rounded-2xl hidden lg:block mr-2"
         />
@@ -30,8 +32,11 @@ const PortfolioTopGallery = () => {
           src={img1}
           width={337}
           height={238}
+          height={228}
+          width={337}
           alt="Picture"
           className="absolute z-10 right-[15%] bottom-[15%] w-auto rounded-2xl hidden lg:block mr-2"
+          className="absolute z-10 right-[15%] bottom-[15%] rounded-2xl hidden lg:block"
         />
       </div>
     </>
