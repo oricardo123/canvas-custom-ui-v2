@@ -21,15 +21,15 @@ const PortfolioTopGallery = () => {
         </p>
         <Image
           src={img2}
-          width={385}
-          height={380}
+          height={385}
+          width={379}
           alt="Picture"
           className="absolute right-[5%] bottom-[40%] w-auto rounded-2xl hidden lg:block mr-2"
         />
         <Image
           src={img1}
+          height={228}
           width={337}
-          height={238}
           alt="Picture"
           className="absolute z-10 right-[15%] bottom-[15%] w-auto rounded-2xl hidden lg:block mr-2"
         />

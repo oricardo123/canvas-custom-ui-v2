@@ -26,16 +26,19 @@ export default function HomeTopGallery() {
         >
           Learn More
         </Link>
-
         <Image
           src={img2}
+          height={385}
+          width={379}
           alt="Picture"
-          className="absolute right-[5%] bottom-[48%] w-auto rounded-2xl hidden lg:block"
+          className="absolute right-[5%] bottom-[48%] rounded-2xl hidden lg:block"
         />
         <Image
           src={img1}
+          height={228}
+          width={337}
           alt="Picture"
-          className="absolute z-10 right-[15%] bottom-[15%] w-auto rounded-2xl hidden lg:block"
+          className="absolute z-10 right-[15%] bottom-[15%] rounded-2xl hidden lg:block"
         />
       </div>
     </>
