@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import Logo from "../../public/images/canvas-logo-brown.png";
+import Logo from "../../public/images/canvas-logo-black.png";
 
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
@@ -18,8 +18,8 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="bg-white text-FooterColor">
-      <header className="absolute inset-x-0 top-0 z-50 w-">
+    <div className=" text-FooterColor">
+      <header className="absolute inset-x-0 top-0 z-50">
         <nav
           className="flex items-center justify-between p-6 lg:px-8"
           aria-label="Global"

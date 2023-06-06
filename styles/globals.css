@@ -8,31 +8,30 @@ body {
 }
 
 .hr{
-  background: linear-gradient(269.97deg, #572D16 23.76%, #A95A2C 87.18%);
+  background: linear-gradient(269.97deg, #6e6956 23.76%, #b2ab8f 87.18%);
 }
 
 .connect-with-us-btn{
-background-color:#733E1D ;
+background-color:#b2ab8f ;
 }
 
 .footer-bg{
-  background:#733E1D
+  background:#b2ab8f;
 }
 
 .left-vector {
-  background: linear-gradient(136.44deg, #4d2c20 37.44%, #814b35 97.5%);
+  background: linear-gradient(269.97deg, #b2ab8f 27%, #6e6956 100%);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
 }
 
 .right-vector {
-  background: linear-gradient(225.9deg, #572d16 33.2%, #ad5c2d 103.89%);
+  background-color: #b2ab8f;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   clip-path: polygon(28% 0%, 100% 0%, 100% 100%, 0% 99%);
 }
 
 .HomeContainer3bg {
-  background: linear-gradient(318.74deg, #572d16 30.67%, #a95a2c 95.58%);
+  background: linear-gradient(107deg, #6e6956 30.67%, #b2ab8f 98.58%);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -55,4 +54,9 @@ background-color:#733E1D ;
 
 .specs{
   height: 3rem;
+}
+
+.updateddiv{
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color:#b2ab8f;
 }

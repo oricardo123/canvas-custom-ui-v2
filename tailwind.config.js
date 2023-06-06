@@ -13,7 +13,7 @@ module.exports = {
         FooterColor: "rgba(115, 62, 29, 1)",
       },
       textColor: {
-        FooterColor: "rgba(115, 62, 29, 1)",
+        FooterColor: "rgba(110, 105, 86)",
       },
       mixBlendMode: {
         screen: "screen",

@@ -40,7 +40,5 @@ export function initializeApollo(initialState = null, cache = null) {
   if (initialState) {
     _apolloClient.cache.restore(initialState);
   }
-
-  // No need to check for window here, just return the client
   return _apolloClient;
 }
