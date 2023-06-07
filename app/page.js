@@ -5,6 +5,7 @@ import TailoredToPerfection from "../components/Home/TailoredToPerfection";
 import GetInTouchHeading from "../components/Home/HomeGetInTouch";
 import "../styles/globals.css";
 import Head from "next/head";
+import MobileCarousel from "@/components/Home/MobileCarousel";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
         <title>Canvas Custom Furniture</title>
       </Head>
       <HomeTopGallery />
+      <MobileCarousel />
       <HomeContainer2 />
       <HomeContainer3 />
       <TailoredToPerfection />
