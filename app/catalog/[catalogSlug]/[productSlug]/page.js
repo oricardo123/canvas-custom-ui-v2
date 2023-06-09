@@ -42,7 +42,7 @@ export default async function Product({
         <title>{productSlug}</title>
       </Head>
       <div className="mb-[6.49rem]">
-        <div className="mt-20">
+        <div className="mt-24">
           <Breadcrumbs
             items={[
               { label: "Catalog", href: "/catalog" },

@@ -1,5 +1,6 @@
 module.exports = {
   content: [
+    "./node_modules/flowbite-react/**/*.js",
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/*.{js,ts,jsx,tsx,mdx}",
@@ -12,7 +13,7 @@ module.exports = {
         FooterColor: "rgba(115, 62, 29, 1)",
       },
       textColor: {
-        FooterColor: "rgba(110, 105, 86)",
+        FooterColor: "rgba(178,171,143)",
       },
       mixBlendMode: {
         screen: "screen",
@@ -28,5 +29,5 @@ module.exports = {
       mixBlendMode: ["responsive"],
     },
   },
-  plugins: [],
+  plugins: [require("flowbite/plugin")],
 };

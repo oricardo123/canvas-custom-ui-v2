@@ -2,7 +2,8 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import Logo from "../../public/images/canvas-logo-black.png";
+import LogoWhite from "../../public/images/canvas-logo-white.png";
+import LogoBlack from "../../public/images/canvas-logo-black.png";
 
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
@@ -18,21 +19,16 @@ const Navbar = () => {
   ];
 
   return (
-    <div className=" text-FooterColor">
-      <header className="absolute inset-x-0 top-0 z-50">
+    <div className="">
+      <header className="absolute inset-x-0 top-0 z-50 text-FooterColor">
         <nav
-          className="flex items-center justify-between p-6 lg:px-8"
+          className="flex items-center justify-between p-6 lg:px-8 mx-10"
           aria-label="Global"
         >
           <div className="flex lg:flex-1">
             <Link href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
-              <Image
-                src={Logo}
-                alt="Picture"
-                width={100}
-                height={100}
-              />
+              <Image src={LogoBlack} alt="Picture" width={130} height={130} />
             </Link>
           </div>
           <div className="flex lg:hidden">
@@ -42,7 +38,7 @@ const Navbar = () => {
               onClick={() => setMobileMenuOpen(true)}
             >
               <span className="sr-only">Open main menu</span>
-              <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+              <Bars3Icon className="h-6 w-6 text-white" aria-hidden="true" />
             </button>
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
@@ -50,7 +46,7 @@ const Navbar = () => {
               <Link
                 href={item.href}
                 key={item.name}
-                className="text-sm font-semibold leading-6 text-black-900 hover:text-[#733E1D]"
+                className="text-sm leading-6 hover:text-[#733E1D]"
               >
                 {item.name}
               </Link>
@@ -67,7 +63,12 @@ const Navbar = () => {
           <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
               <Link href="/" className="-m-1.5 p-1.5">
-                <Image src={Logo} width={80} height={80} className="mb-4"/>
+                <Image
+                  src={LogoBlack}
+                  width={100}
+                  height={100}
+                  className="mb-4"
+                />
               </Link>
               <button
                 type="button"

@@ -6,39 +6,36 @@ import img2 from "../../public/images/canvas-image-2.png";
 export default function HomeTopGallery() {
   return (
     <>
-      <div className="grid md:grid-cols-2 mt-20 text-white left-vector">
-        <div>
-          <h1 className="max-w-[41rem]  mt-40 left-[10%] font-extrabold text-[45px] mr-3 z-50">
-            Transform your space with our custom furniture solutions at Canvas
-            Custom Furniture.
+      <div className="grid grid-cols-5 mt-24 text-FooterColor updateddiv h-auto lg:h-[40rem] relative">
+        <div className="col-span-5 lg:col-span-3 m-10 lg:m-32">
+          <h1 className="max-w-[53rem] text-[40px] w-auto ">
+            Transform your project space with Canvas Custom solutions.
           </h1>
-          <Link
-            href="/catalog"
-            className=" text-black bg-white mt-[32rem] md:mt-[25rem] left-[10%] p-2 mix-blend-screen rounded-md text-lg font-bold z-50"
-          >
-            View Catalog
-          </Link>
-          <Link
-            href="/about"
-            className=" mt-[32rem] md:mt-[25rem] left-[10%] ml-[10rem] p-[0.4rem] outline rounded-md text-lg font-bold z-50"
-          >
-            Learn More
-          </Link>
+          <div className="mt-14">
+            <Link
+              href="/catalog"
+              className="p-1 text-xs bg-white justify-self-start  mix-blend-screen rounded-md "
+            >
+              View Catalog
+            </Link>
+            <Link
+              href="/about"
+              className="text-xs p-1 outline outline-1 justify-self-start rounded-md mt-4 ml-5 lg:ml-14"
+            >
+              Learn More
+            </Link>
+          </div>
         </div>
-        <div>
+        <div className="hidden lg:block">
           <Image
             src={img2}
-            height={385}
-            width={379}
             alt="Picture"
-            className=" rounded-2xl hidden lg:block"
+            className="absolute top-10 right-10 rounded-2xl hidden lg:block"
           />
           <Image
             src={img1}
-            height={228}
-            width={337}
             alt="Picture"
-            className="rounded-2xl hidden lg:block"
+            className="absolute top-80 rounded-2xl hidden lg:block z-10"
           />
         </div>
       </div>

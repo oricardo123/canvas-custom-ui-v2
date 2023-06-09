@@ -5,7 +5,7 @@ import img2 from "../../public/images/Portfolio-Top-Gallery1.png";
 const PortfolioTopGallery = () => {
   return (
     <>
-      <div className="grid grid-cols-2 mt-20 text-white updateddiv">
+      <div className="grid grid-cols-2 mt-24 text-white updateddiv h-[45rem]">
         <div className="p-10">
           <h1 className="max-w-[41rem] top-60 left-[10%] font-extrabold text-[45px] mr-3">
             Discovering The Craftmanship

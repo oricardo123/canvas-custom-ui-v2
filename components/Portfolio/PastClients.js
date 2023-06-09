@@ -146,7 +146,7 @@ const PastClients = () => {
           <Image src={vb} height={35} width={150} />
         </Link>
       </div>
-      <div className="hr h-1 w-auto mt-[13rem] mb-[9rem] mx-[9rem]" />
+
       <div className="flex justify-center">
         <h1 className="font-bold text-3xl mb-28">Clients</h1>
       </div>

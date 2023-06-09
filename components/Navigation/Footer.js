@@ -26,7 +26,10 @@ const Footer = () => {
             <h1 className="font-bold">CONTACT INFO</h1>
             <p>Business Email:</p>
             <p>
-              <a href="mailto:sales@canvascontract.com">
+              <a
+                href="mailto:sales@canvascontract.com"
+                className="hover:text-blue-700"
+              >
                 sales@canvascontract.com
               </a>
             </p>
@@ -35,11 +38,15 @@ const Footer = () => {
               <div className="mt-1">
                 <p>
                   Mobile:
-                  <a href="tel:+447773888815">+44 (0)7773 888815</a>
+                  <a href="tel:+447773888815" className="hover:text-blue-700">
+                    +44 (0)7773 888815
+                  </a>
                 </p>
                 <p>
                   (Portugal):
-                  <a href="tel:+351914827020">+351 914827020</a>
+                  <a href="tel:+351914827020" className="hover:text-blue-700">
+                    +351 914827020
+                  </a>
                 </p>
               </div>
             </div>
@@ -56,7 +63,11 @@ const Footer = () => {
         <div className="flex flex-col">
           <h3 className="font-bold mb-4">PAGES</h3>
           {navigation.map((item) => (
-            <Link href={item.href} key={item.name} className="py-1">
+            <Link
+              href={item.href}
+              key={item.name}
+              className="py-1 hover:text-[#733E1D]"
+            >
               {item.name}
             </Link>
           ))}

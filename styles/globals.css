@@ -8,7 +8,7 @@ body {
 }
 
 .hr{
-  background: linear-gradient(269.97deg, #6e6956 23.76%, #b2ab8f 87.18%);
+  background-color:#b2ab8f;
 }
 
 .connect-with-us-btn{
@@ -16,22 +16,16 @@ background-color:#b2ab8f ;
 }
 
 .footer-bg{
-  background:#b2ab8f;
-}
-
-.left-vector {
-  background: linear-gradient(269.97deg, #b2ab8f 27%, #6e6956 100%);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color:#b2ab8f;
 }
 
 .right-vector {
   background-color: #b2ab8f;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  clip-path: polygon(28% 0%, 100% 0%, 100% 100%, 0% 99%);
 }
 
 .HomeContainer3bg {
-  background: linear-gradient(107deg, #6e6956 30.67%, #b2ab8f 98.58%);
+  background-color: #b2ab8f;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -57,6 +51,5 @@ background-color:#b2ab8f ;
 }
 
 .updateddiv{
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  background-color:#b2ab8f;
+  background-color: #b2ab8f;
 }
